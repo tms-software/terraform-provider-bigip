@@ -5,8 +5,14 @@
 
 module github.com/F5Networks/terraform-provider-bigip
 
+replace howett.net/plist => ./vendor/github.com/DHowett/go-plist
+replace honnef.co/go/tools => ./vendor/github.com/dominikh/go-tools
+replace go.opencensus.io => ./vendor/github.com/census-instrumentation/opencensus-go
+replace rsc.io/binaryregexp => ./vendor/github.com/rsc/binaryregexp
+replace github.com/f5devcentral/go-bigip => ./vendor/github.com/f5devcentral/go-bigip
+
 require (
-	github.com/f5devcentral/go-bigip v0.0.0-20210218015208-fde2d84238d6
+	github.com/f5devcentral/go-bigip v0.0.0
 	github.com/f5devcentral/go-bigip/f5teem v0.0.0-20210218015208-fde2d84238d6
 	github.com/google/uuid v1.1.1
 	github.com/hashicorp/hcl v1.0.0 // indirect
